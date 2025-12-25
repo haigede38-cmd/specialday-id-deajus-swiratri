@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap');
+
+body {
+    background: #f7f7f7;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.invitation-container {
+    background: #fff;
+    max-width: 500px;
+    margin: 32px auto 16px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(205, 168, 73, 0.13);
+    border: 2px solid #d5b86e;
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    color: #a2893c;
+}
+.header h2 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    color: #aa871c;
+}
+.header h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    margin: 0;
+    color: #b59b49;
+}
+.divider {
+    border-bottom: 2px solid #e8cf96;
+    margin: 20px 0;
+}
+.content {
+    font-size: 1.07em;
+    color: #664d19;
+    text-align: center;
+}
+.details {
+    margin: 16px auto;
+    color: #967529;
+    font-weight: bold;
+    font-size: 1.08em;
+    border: none;
+}
+.details td {
+    padding: 4px 10px 4px 0;
+}
+
+.greeting {
+    font-size: 1.18em;
+    color: #97731a;
+    margin-bottom: 10px;
+}
+.hope {
+    margin-top: 18px;
+    font-size: 1em;
+    font-style: italic;
+    color: #917038;
+}
+.wishes {
+    background: #fdf6e4;
+    border-radius: 10px;
+    padding: 18px 10px 8px 10px;
+    margin-top: 14px;
+}
+.wishes h3 {
+    margin-top: 0;
+    color: #b6943c;
+    font-size: 1.13em;
+}
+#wishForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+#wishForm input, #wishForm textarea {
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid #dac07f;
+    font-family: inherit;
+    font-size: 1em;
+    background: #fffdfa;
+}
+#wishForm textarea {
+    resize: none;
+}
+#wishForm button {
+    background: linear-gradient(90deg, #f6e7be, #e4c76e);
+    color: #8a7524;
+    font-weight: bold;
+    border: none;
+    padding: 8px 0;
+    border-radius: 7px;
+    font-size: 1.07em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#wishForm button:hover {
+    background: linear-gradient(90deg, #e4c76e, #f6e7be);
+}
+#wishList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 140px;
+    overflow-y: auto;
+}
+#wishList li {
+    margin-bottom: 8px;
+    padding: 9px 12px;
+    background: #fff7df;
+    border-left: 5px solid #efd475;
+    border-radius: 0 9px 9px 0;
+    font-size: 0.98em;
+    color: #86641f;
+}
+#wishList li .name {
+    font-weight: 700;
+    color: #ae973d;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #d0b05d;
+    font-size: 0.95em;
+    padding-top: 15px;
+    border-top: 1px dashed #e3cb89;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .invitation-container {
+        padding: 16px 4vw 14px 4vw;
+    }
+    .header h1 {
+        font-size: 1.3em;
+    }
+    .header h2 {
+        font-size: 1em;
+    }
+}
